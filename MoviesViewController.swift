@@ -18,6 +18,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource,UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Initialize a UIRefreshControl
+        let refreshControl = UIRefreshControl()
+        
         TableView.dataSource = self;
         
         TableView.delegate = self;
@@ -77,11 +80,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource,UITableViewD
         
         let baseUrl = "https://image.tmdb.org/t/p/w342"
       
-        //let imageUrl = NSURL(string: baseUrl + posterPath)
+        let imageUrl = NSURL(string: baseUrl + posterPath)
         
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
-    
+        cell.posterView.setImageWithURL(imageUrl!)
         
         print ("row\(indexPath.row)")
         return cell
