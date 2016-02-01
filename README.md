@@ -36,7 +36,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Couldn't figure out where to find the images used for the "top rated" and "now playing" tabs.
 
 ## License
 
